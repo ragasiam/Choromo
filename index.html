@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+<!-- inject:css -->
+    <link rel="stylesheet" href="https://rawgit.com/ragasiam/Choromo/master/style.css">
+    <!-- endinject -->
+
+
+</head>
+<body>
+
+<div class="pure-menu pure-menu-open pure-menu-horizontal fixed-menu">
+    <a href="http://www.ragasiam.com" class="pure-menu-heading hide-for-sm">RAGASIAM.COM:</a>
+    <ul>
+        <li ng-class="{ 'pure-menu-selected' : vm.currentScrollTrigger === 'showcase' }"><a href="http://www.ragasiam.com/p/fm.html">RAGASIAM RADIO</a></li>
+        <li ng-class="{ 'pure-menu-selected' : vm.currentScrollTrigger === 'playground' }"><a href="http://www.ragasiam.com/p/recent-news.html">RECENT NEWS</a></li>
+        <li ng-class="{ 'pure-menu-selected' : vm.currentScrollTrigger === 'about' }"><a href="https://twitter.com/10bathu">About</a></li>
+    </ul>
+</div>
+
+
+
+<div class="playground-container" id="playground" observe-scroll="playground">
+    <playground></playground>
+</div>
+
+<!-- inject:js -->
+<script src="https://rawgit.com/ragasiam/Choromo/master/main.js"></script>
+<!-- endinject -->
+
+</body>
+</html>
